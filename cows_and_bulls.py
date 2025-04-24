@@ -1,3 +1,4 @@
+""" Every digit in place is called 'bull' and every digit not in place is called 'cow'. """
 import tkinter as tk
 from tkinter import messagebox
 import random
