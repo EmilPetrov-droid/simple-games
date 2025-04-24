@@ -26,11 +26,11 @@ def check_guess(event=None):
 
     for i in range(4):
         if guess[i] == target_number[i]:
-            cows += 1
-        elif guess[i] in target_number:
             bulls += 1
+        elif guess[i] in target_number:
+            cows += 1
 
-    if cows == 4:
+    if bulls == 4:
         messagebox.showinfo("Congratulations!", f"You guessed it in {attempts} attempts!")
         root.quit()
     else:
